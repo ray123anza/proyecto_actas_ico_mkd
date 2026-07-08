@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Cartas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- PANTALLA DE CARGA -->
+<div id="loading-screen">
+  <img src="imagenes/inicio.png" alt="Inicio" class="loading-logo">
+</div>
+
+<!-- CONTENIDO -->
+<div id="app" class="hidden fade-in">
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>SISTEMA DE CARTAS</h1>
+    <img src="imagenes/logo.png" alt="Logo">
+  </header>
+
+  <!-- BANNER -->
+  <div class="banner">
+    ESTUDIANTES
+  </div>
+
+  <!-- PANTALLA 1 -->
+  <div id="pantalla1" class="grid-cartas">
+
+    <div class="card" onclick="seleccionarCarta('ACTA DE 1er PANEL')">
+      <img src="imagenes/TGI.png">
+      <p>ACTA DE 1er PANEL</p>
+    </div>
+
+    <div class="card" onclick="seleccionarCarta('ACTA DE 2do PANEL')">
+      <img src="imagenes/TGII.png">
+      <p>ACTA DE 2do PANEL</p>
+    </div>
+
+    <div class="card" onclick="seleccionarCarta('Carta de compromiso de Ingles')">
+      <img src="imagenes/ING.png">
+      <p>Carta de compromiso de Ingles</p>
+    </div>
+
+  </div>
+
+  <!-- PANTALLA 2 -->
+  <div id="pantalla2" class="hidden fade-slide">
+
+    <div class="titulo-formulario" id="tituloCarta"></div>
+
+    <form id="formulario">
+
+      <input type="text" placeholder="Nombre" required>
+      <input type="date" required>
+      <input type="text" placeholder="Aula" required>
+      <input type="text" placeholder="Nombre del docente" required>
+
+      <button type="submit">Generar PDF</button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
