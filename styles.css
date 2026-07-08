@@ -22,7 +22,7 @@ body {
 }
 
 .loading-logo {
-  width: 350px;
+  width: 250px;
   animation: zoomIn 1.2s ease-in-out infinite alternate;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .header img {
-  width: 1500px;
+  width: 90px;
 }
 
 /* BANNER */
